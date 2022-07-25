@@ -1,0 +1,116 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+}
+
+.background {
+    background: url("img/img2.jpg") rgba(0, 0, 0, 0.61);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100vh;
+    filter: blur(5px);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 600px;
+    margin: 17vh auto;
+    background: transparent;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    border-radius: 25px;
+}
+
+h2 {
+    margin: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item {
+    display: flex;
+    width: 95%;
+    background: transparent;
+    margin: 10px auto;
+    border-radius: 15px;
+    border-bottom: 1px solid rgb(82, 81, 81);
+}
+
+.form-item:hover {
+    border: 1px solid rgb(82, 81, 81);
+}
+
+input {
+    background: transparent;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin: auto 5px;
+    color: #fff;
+}
+
+span {
+    user-select: none;
+    margin: 2px 5px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 18px;
+    font-size: 1.2rem;
+}
+
+.options {
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    font-size: 18px;
+    padding: 5px 16px;
+    margin: 10px 15px;
+    width: 140px;
+    background: rgba(122, 123, 116, 0.172);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.61);
+    border: none;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    letter-spacing: 0.25em;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    cursor: default;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 90%;
+    }
+}
